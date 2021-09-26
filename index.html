@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProgresBar</title>
+    <style>
+
+        body{
+            margin:0px;
+        }
+        #contenido{
+            position: fixed;
+            width:100%;
+            height:100%;
+            background:black;
+            display: flex;
+            justify-content:center;
+            align-items:center;
+        }
+        #formContente{
+            width:400px;
+            height:100px;
+            
+            display:flex;
+            justify-content:center;
+            align-items:center;
+
+        }
+        #progressBar{
+            width: 80%;
+            height:30px;
+            background:rgb(63, 63, 63);
+            border-radius: 10px;;
+            overflow: hidden;
+        }
+        #bar{
+            width:150px;
+            height:100%;;
+            border-radius: 10px;;
+            background-image: -webkit-linear-gradient(-45deg, 
+	                           transparent 33%, rgba(0, 0, 0, .1) 33%, 
+	                           rgba(0,0, 0, .1) 66%, transparent 66%),
+	   -webkit-linear-gradient(top, 
+	                           rgba(49, 228, 213, 0.849), 
+	                           rgba(182, 141, 141, 0.25)),
+	   -webkit-linear-gradient(left, #09c, #09c);
+            background-position: 0px;   
+            animation: loaderAnimation 5s linear infinite;
+        }
+        @keyframes loaderAnimation {
+            from{
+                background-position: 0px;   
+            }
+            to{
+                background-position: 300px;   
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="contenido">
+
+        <div id="formContente">
+
+
+            <div id="progressBar">
+
+                <div id="bar">
+
+                    
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+</html>
